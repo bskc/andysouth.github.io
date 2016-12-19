@@ -6,6 +6,10 @@ published: false
 status: process
 draft: false
 tags: R 
+output:
+  prettydoc::html_pretty:
+    theme: architect
+    highlight: github
 ---
 
 
