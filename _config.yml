@@ -25,12 +25,12 @@ footer-links:
   instagram: 
   linkedin: 
   pinterest: 
-  rss: Y # just type anything here for a working RSS icon, make sure you set the "url" above!
-  twitter: southmapr
-  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  rss:  # just type anything here for a working RSS icon, make sure you set the "url" above!
+  twitter: 
+  stackoverflow: users/6948709/karthik-shanmukha # your stackoverflow profile, e.g. "users/50476/bart-kiers"
 
 # Your disqus shortname, entering this will enable commenting on posts
-disqus: andysouthgithubio
+disqus: 
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: 

@@ -4,14 +4,12 @@ title: About
 permalink: /about/
 ---
 
-I'm a freelance developer and researcher with a background in ecology. I like R and maps. This blog is to share R related things.
+I'm a certified base [SAS](https://www.youracclaim.com/badges/48a9b6ef-59f3-4c5f-9c3a-3e9b86b6fd81) programmer  with a background in pharmaceutical sciences looking to break in to the field of datascience.
 
-For more see : [andysouth.co.uk](http://www.andysouth.co.uk).
 
-Or my [CV](/images/cv_AndySouth_2pages_dec2014.pdf)
-
-Or [google scholar](http://scholar.google.com/citations?user=eJz46kAAAAAJ&hl=en)
 
 ### Contact
 
-[southandy@gmail.com](mailto:southandy@gmail.com)
+Phone:+91-9036930779
+
+Email:[shanmukhakarthik@hotmail.com](mailto:shanmukhakarthik@hotmail.com)
