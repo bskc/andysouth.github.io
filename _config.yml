@@ -3,13 +3,13 @@
 #
 
 # Name of your site (displayed in the header)
-name: Andy South
+name: Shanmukha Karthik
 
 # Short bio or description (displayed in the header)
-description: Researcher and R developer. Norwich, UK.
+description: Datascience Newbie, India.
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/meSmall.jpg
+avatar: https://avatars0.githubusercontent.com/u/21377152?v=3
 
 #
 # Flags below are optional
@@ -21,7 +21,7 @@ footer-links:
   email: 
   facebook: 
   flickr: 
-  github: andysouth
+  github: bskc
   instagram: 
   linkedin: 
   pinterest: 
