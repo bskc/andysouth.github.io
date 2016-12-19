@@ -11,6 +11,6 @@ I'm a certified base [SAS](https://www.youracclaim.com/badges/48a9b6ef-59f3-4c5f
 
 ### Contact
 
-Phone:+91-9036930779
+Phone: +91-9036930779
 
-[shanmukhakarthik@hotmail.com](mailto:shanmukhakarthik@hotmail.com)
+Email: [shanmukhakarthik@hotmail.com](mailto:shanmukhakarthik@hotmail.com)
