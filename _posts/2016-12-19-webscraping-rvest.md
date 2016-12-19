@@ -20,7 +20,7 @@ Here is a [webpage](http://stats.espncricinfo.com/ci/engine/records/averages/bat
 *i am going to scrap data from the webpage by two different ways.*
  
  
-###Method 1
+### Method 1
  
 __Load rvest package__
 
@@ -64,9 +64,9 @@ head(cricinfo_table)
 ## 5 JM Anderson (ENG)      12   66           17    8.25
 ## 6   ZS Ansari (ENG)       3   49           32    9.80
 {% endhighlight %}
-######Table 1.
+###### Table 1.
  
-###Method 2
+### Method 2
  
 
 {% highlight r %}
@@ -87,8 +87,8 @@ head(cricinfo1)
 ## 5 JM Anderson (ENG)  12   15  7   66   17  8.25   99 66.66   0  0 3   9  0
 ## 6   ZS Ansari (ENG)   3    5  0   49   32  9.80  136 36.02   0  0 2   5  0
 {% endhighlight %}
-######Table 2.
+###### Table 2.
  
-###Method 1 vs Method 2
+### Method 1 vs Method 2
  
 With method 1, there is visibly more numbers of lines of code have been used. However, this way gives more control over picking the columns that you  need to carry out data analysis. Out Of the 14 variables or columns in the table, i have selectively picked 5 columns (Table 1).This method also requires a few additional steps, that includes using [SelectorGadget](http://selectorgadget.com/),an open source tool that makes CSS selector generation and discovery.Method 2, on the other hand, has only a single line of code.However, the entire table including all the columns are scrapped (Table 2).
