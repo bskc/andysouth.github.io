@@ -6,10 +6,7 @@ published: false
 status: process
 draft: false
 tags: R 
-output:
-  prettydoc::html_pretty:
-    theme: architect
-    highlight: github
+output: html_document
 ---
 
 
@@ -23,7 +20,7 @@ Here is a [webpage](http://stats.espncricinfo.com/ci/engine/records/averages/bat
 *i am going to scrap data from the webpage by two different ways.*
 
 
-###Method 1###
+###Method 1
 
 __Load rvest package__
 ```{r message=FALSE, warning=FALSE}
@@ -54,9 +51,9 @@ cricinfo_table <- data.frame(Player,Matches,Runs,Highestscore,Average)
 #Preview dataframe
 head(cricinfo_table) 
 ```
-######Table 1.######
+######Table 1.
 
-###Method 2###
+###Method 2
 
 ```{r}
 #Extract the entire table(including all the rows and columns)
@@ -64,8 +61,8 @@ cricinfo1 <- cricinfo %>% html_nodes("table") %>% .[[1]] %>% html_table()
 #Preview dataframe
 head(cricinfo1)
 ```
-######Table 2.######
+######Table 2.
 
-###Method 1 vs Method 2###
+###Method 1 vs Method 2
 
 With method 1, there is visibly more numbers of lines of code have been used. However, this way gives more control over picking the columns that you  need to carry out data analysis. Out Of the 14 variables or columns in the table, i have selectively picked 5 columns (Table 1).This method also requires a few additional steps, that includes using [SelectorGadget](http://selectorgadget.com/),an open source tool that makes CSS selector generation and discovery.Method 2, on the other hand, has only a single line of code.However, the entire table including all the columns are scrapped (Table 2).
