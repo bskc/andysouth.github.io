@@ -1,0 +1,62 @@
+---
+title: "Web scrapping with Rvest"
+output: github_document
+---
+
+
+Cricket has always been the most popular sport in India. Some people are just obsessed with 'numbers'. From most 'number' of runs scored to most 'number' of wickets taken and the list goes on. I haven't followed cricket for a while now, might come as a surprise, considering that i live in a cricket frenzy nation. It wasn't until recently i started following the sport again, i was curious to find out which players have been doing well and which weren't. 
+
+
+: ![](http://www.espncricinfo.com/db/PICTURES/CMS/246000/246097.jpg)
+
+Here is a [webpage](http://stats.espncricinfo.com/ci/engine/records/averages/batting.html?class=1;id=2016;type=year) from a popular sports website, espncricinfo that has data of batsmen from England and Indian crickets teams in the year 2016 so far.
+
+*i am going to scrap data from the webpage by two different ways.*
+
+
+###Method 1
+
+__Load rvest package__
+```{r message=FALSE, warning=FALSE}
+
+library(rvest)
+```
+
+__Reading url__
+```{r message=FALSE, warning=FALSE}
+cricinfo <- read_html("http://stats.espncricinfo.com/ci/engine/records/averages/batting.html?class=1;id=2016;type=year")
+
+```
+
+__Web scrapping__
+```{r message=FALSE, warning=FALSE}
+#Extract Players names
+Player <- cricinfo %>% html_nodes(".data1 .left") %>% html_text()
+#Extract Matches played bybatsmen
+Matches <- cricinfo %>% html_nodes(".left+ td") %>% html_text()
+#Extract the number of runs scored by batsmen
+Runs <- Average <- cricinfo%>%html_nodes("td:nth-child(5)")%>%html_text()
+#Extract highest scores by batsmen
+Highestscore <- cricinfo %>% html_nodes("td:nth-child(6)") %>% html_text()
+#Extract batting average's of the batsmen
+Average <- cricinfo%>%html_nodes("td:nth-child(7)")%>%html_text()
+# Creat a data frame with the above varaibles
+cricinfo_table <- data.frame(Player,Matches,Runs,Highestscore,Average)
+#Preview dataframe
+head(cricinfo_table) 
+```
+######Table 1.
+
+###Method 2
+
+```{r}
+#Extract the entire table(including all the rows and columns)
+cricinfo1 <- cricinfo %>% html_nodes("table") %>% .[[1]] %>% html_table()
+#Preview dataframe
+head(cricinfo1)
+```
+######Table 2.
+
+###Method 1 vs Method 2
+
+With method 1, there is visibly more numbers of lines of code have been used. However, this way gives more control over picking the columns that you  need to carry out data analysis. Out Of the 14 variables or columns in the table, i have selectively picked 5 columns (Table 1).This method also requires a few additional steps, that includes using [SelectorGadget](http://selectorgadget.com/),an open source tool that makes CSS selector generation and discovery.Method 2, on the other hand, has only a single line of code.However, the entire table including all the columns are scrapped (Table 2).

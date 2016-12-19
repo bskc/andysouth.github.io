@@ -1,6 +1,0 @@
----
-title: "Untitled"
-output: github_document
----
-
-this is sample.
