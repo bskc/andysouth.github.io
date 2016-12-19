@@ -6,7 +6,7 @@ permalink: /indexbrief/
 
  [R]
  
-* [Web scrapping with r](https://bskc.github.io/sk.github.io/webscraping-rvest/)
+* [Web scraping with rvest](https://bskc.github.io/sk.github.io/webscraping-rvest/)
 
 
  [SAS]
