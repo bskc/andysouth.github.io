@@ -1,0 +1,87 @@
+---
+layout: post
+title: Web scraping with rvest
+published: false
+status: process
+draft: false
+tags: R 
+output:
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
+---
+
+
+
+***Reading Data***
+```{r message=FALSE, warning=FALSE}
+library(ggplot2)
+espn <-read.csv("H:/espn.csv")
+attach(espn)
+```
+
+***Define variables***
+```{r message=FALSE, warning=FALSE}
+y <- cbind(Ave) #Dependent Variable
+x1 <- cbind(Runs) #Independent Variable
+x <- cbind(Runs,Inns,Matches) #Independent Variables
+
+```
+
+***Correlation among variables***
+```{r message=FALSE, warning=FALSE}
+cor(y,x)
+ggplot(espn, aes(x = x1, y = y)) + 
+  geom_point() 
+  
+```
+
+***Simple linear regression***
+```{r message=FALSE, warning=FALSE}
+olsreg1 <- lm(y ~ x1)
+summary(olsreg1)
+confint(olsreg1, level = 0.95)
+anova(olsreg1)
+
+```
+
+***Plotting regression line*** 
+```{r message=FALSE, warning=FALSE}
+
+ggplot(espn, aes(x = x1, y = y)) + 
+  geom_point() +
+  stat_smooth(method = "lm", col = "red")
+
+
+```
+
+***Predicted values of dependent variable***
+```{r message=FALSE, warning=FALSE}
+
+y1hat <- fitted(olsreg1)
+summary(olsreg1)
+ggplot(espn, aes(x = y1hat, y = y)) + 
+  geom_point() 
+
+```
+
+***Multiple linear regression***
+```{r message=FALSE, warning=FALSE}
+olsreg2 <- lm(y ~ x)
+summary(olsreg2)
+confint(olsreg2, leve=0.95)
+anova(olsreg2)
+```
+
+***Predicted values of dependent variable***
+```{r message=FALSE, warning=FALSE}
+yhat <- fitted(olsreg2)
+summary(yhat)
+```
+
+***Regression residuals***
+```{r message=FALSE, warning=FALSE}
+ehat <- resid(olsreg2)
+summary(ehat)
+```
+

@@ -60,7 +60,7 @@ head(cricinfo_table)
 {% highlight text %}
 ##              Player Matches Runs Highestscore Average
 ## 1    KJ Abbott (SA)       3   36           17    9.00
-## 2      MM Ali (ENG)     17* 1034         155*   47.00
+## 2      MM Ali (ENG)      17 1078         155*   46.86
 ## 3      HM Amla (SA)       8  661          201   50.84
 ## 4  CJ Anderson (NZ)       2  150           72   37.50
 ## 5 JM Anderson (ENG)      12   66           17    8.25
@@ -83,7 +83,7 @@ head(cricinfo1)
 {% highlight text %}
 ##              Player Mat Inns NO Runs   HS   Ave   BF    SR 100 50 0  4s 6s
 ## 1    KJ Abbott (SA)   3    4  0   36   17  9.00   97 37.11   0  0 1   2  1
-## 2      MM Ali (ENG) 17*   28  6 1034 155* 47.00 1907 54.22   4  5 3 112 11
+## 2      MM Ali (ENG)  17   29  6 1078 155* 46.86 2004 53.79   4  5 3 116 11
 ## 3      HM Amla (SA)   8   13  0  661  201 50.84 1292 51.16   2  3 1  94  2
 ## 4  CJ Anderson (NZ)   2    4  0  150   72 37.50  323 46.43   0  1 1  19  4
 ## 5 JM Anderson (ENG)  12   15  7   66   17  8.25   99 66.66   0  0 3   9  0
