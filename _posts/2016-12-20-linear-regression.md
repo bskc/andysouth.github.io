@@ -13,6 +13,8 @@ output:
  
 Cricket has always been the most popular sport in India. Some people are just obsessed with ‘numbers’. From most ‘number’ of runs scored to most ‘number’ of wickets taken and the list goes on. I haven’t followed cricket for a while now, might come as a surprise to many, considering that i live in a cricket frenzy nation. It wasn’t until recently i started following the sport again, which left me curious to find out which players have been doing well and which weren’t. Afterall, i was trying to reconnect with game after a long hiatus.
  
+ 
+ 
 ***Reading Data***
 
 {% highlight r %}
