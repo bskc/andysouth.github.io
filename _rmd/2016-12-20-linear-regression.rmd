@@ -24,17 +24,17 @@ attach(espn)
 
 ***Define variables***
 ```{r message=FALSE, warning=FALSE}
-y <- cbind(Ave) #Dependent Variable
-x1 <- cbind(Runs) #Independent Variable
+y <- c(Ave) #Dependent Variable
+x1 <- c(Runs) #Independent Variable
 x <- cbind(Runs,Inns,Matches) #Independent Variables
 
 ```
 
 ***Correlation among variables***
 ```{r message=FALSE, warning=FALSE}
-cor(y,x)
-ggplot(espn, aes(x = x1, y = y)) + 
-  geom_point() 
+cor(y,x1)
+
+plot(y ~ x1, data=espn)
   
 ```
 
@@ -47,23 +47,18 @@ anova(olsreg1)
 
 ```
 
-***Plotting regression line*** 
-```{r message=FALSE, warning=FALSE}
-
-ggplot(espn, aes(x = x1, y = y)) + 
-  geom_point() +
-  stat_smooth(method = "lm", col = "red")
-
-
+***Plotting regression line***
+```{r}
+abline(olsreg1)
 ```
+
+
 
 ***Predicted values of dependent variable***
 ```{r message=FALSE, warning=FALSE}
-
 y1hat <- fitted(olsreg1)
 summary(olsreg1)
-ggplot(espn, aes(x = y1hat, y = y)) + 
-  geom_point() 
+plot(y1hat ~ x1)
 
 ```
 
