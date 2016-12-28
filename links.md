@@ -17,4 +17,6 @@ Social Media
 
 * [Linkedin](https://www.linkedin.com/in/shanmukha-karthik-chandra-b-a91b9b33?trk=nav_responsive_tab_profile)
 * [GitHub](https://github.com/bskc)
+* [RPubs] (https://rpubs.com/bskc)
 * [Stackoverflow](https://stackoverflow.com/users/6948709/karthik-shanmukha)
+
