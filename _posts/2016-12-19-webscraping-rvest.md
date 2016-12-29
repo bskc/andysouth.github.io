@@ -14,6 +14,7 @@ output:
  
 Cricket has always been the most popular sport in India. Some people are just obsessed with 'numbers'. From most 'number' of runs scored to most 'number' of wickets taken and the list goes on. I haven't followed cricket for a while now, might come as a surprise to many, considering that i live in a cricket frenzy nation. It wasn't until recently i started following the sport again, which left me curious to find out which players have been doing well and which weren't. Afterall, i was trying to reconnect with game after a long hiatus.
  
+[readmore](file:///H:/Data%20and%20scripts%20for%20all%20videos/karthik.github.io/_rmd/2016-12-19-webscraping-rvest.html)
  
 : ![](http://www.espncricinfo.com/db/PICTURES/CMS/246000/246097.jpg)
  
@@ -59,9 +60,9 @@ head(cricinfo_table)
 
 {% highlight text %}
 ##              Player Matches Runs Highestscore Average
-## 1    KJ Abbott (SA)       3   36           17    9.00
+## 1    KJ Abbott (SA)      4*   36           17    7.20
 ## 2      MM Ali (ENG)      17 1078         155*   46.86
-## 3      HM Amla (SA)       8  661          201   50.84
+## 3      HM Amla (SA)      9*  729          201   48.60
 ## 4  CJ Anderson (NZ)       2  150           72   37.50
 ## 5 JM Anderson (ENG)      12   66           17    8.25
 ## 6   ZS Ansari (ENG)       3   49           32    9.80
@@ -82,9 +83,9 @@ head(cricinfo1)
 
 {% highlight text %}
 ##              Player Mat Inns NO Runs   HS   Ave   BF    SR 100 50 0  4s 6s
-## 1    KJ Abbott (SA)   3    4  0   36   17  9.00   97 37.11   0  0 1   2  1
+## 1    KJ Abbott (SA)  4*    5  0   36   17  7.20  100 36.00   0  0 2   2  1
 ## 2      MM Ali (ENG)  17   29  6 1078 155* 46.86 2004 53.79   4  5 3 116 11
-## 3      HM Amla (SA)   8   13  0  661  201 50.84 1292 51.16   2  3 1  94  2
+## 3      HM Amla (SA)  9*   15  0  729  201 48.60 1421 51.30   2  3 1 101  2
 ## 4  CJ Anderson (NZ)   2    4  0  150   72 37.50  323 46.43   0  1 1  19  4
 ## 5 JM Anderson (ENG)  12   15  7   66   17  8.25   99 66.66   0  0 3   9  0
 ## 6   ZS Ansari (ENG)   3    5  0   49   32  9.80  136 36.02   0  0 2   5  0
