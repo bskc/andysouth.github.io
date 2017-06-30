@@ -11,7 +11,7 @@ output:
     highlight: github
 ---
  
-In order to perform ordinary least sqaures regression, there are certain assumptions that need to be considered before building the modeling. Assumptions regarding the residuals, such as normal distribution, constant variance i.e homoscadaticity need to checked while building a model. However, ther will be times when the assumptions of OLS are violated by the data. In such instances data transformation can be employed to transform data from non-linear distribution to linear distribution. In this post we will look at one such technique called "Box Cox" transformation.
+In order to perform ordinary least sqaures regression, there are certain assumptions that need to be considered before building a modeling. Assumptions regarding residuals, such as normal distribution, constant variance i.e homoscadaticity need to be checked while building a model. However, there will be times when the assumptions of OLS are violated by data. In such instances data transformation can be employed to transform data from non-linear distribution to linear distribution. In this post we will look at one such technique called "Box Cox" transformation.
  
  
  
